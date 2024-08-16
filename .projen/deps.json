@@ -20,6 +20,10 @@
       "type": "build"
     },
     {
+      "name": "aws-cdk-lib",
+      "type": "build"
+    },
+    {
       "name": "cdklabs-projen-project-types",
       "type": "build"
     },
@@ -94,7 +98,7 @@
     },
     {
       "name": "aws-cdk-lib",
-      "version": "^2.1.0",
+      "version": "^2.147.1",
       "type": "peer"
     },
     {
