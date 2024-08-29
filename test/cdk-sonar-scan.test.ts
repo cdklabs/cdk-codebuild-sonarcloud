@@ -22,5 +22,12 @@ test('construct contains a build project', () => {
 
   // Prepare the stack for assertions.
   const template = Template.fromStack(stack);
-  template.hasResourceProperties('AWS::CodeBuild::Project', {});
+  template.hasResourceProperties('AWS::CodeBuild::Project', {
+    Environment: {
+      Image: 'aws/codebuild/standard:7.0',
+    },
+    Source: {
+      Type: 'CODEPIPELINE',
+    },
+  });
 });
