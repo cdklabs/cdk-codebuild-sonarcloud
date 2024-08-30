@@ -1,14 +1,17 @@
-import { CdklabsConstructLibrary } from "cdklabs-projen-project-types";
+import { CdklabsConstructLibrary } from 'cdklabs-projen-project-types';
 const project = new CdklabsConstructLibrary({
-  author: "AWS",
-  authorAddress: "aws-cdk-dev@amazon.com",
-  cdkVersion: "2.1.0",
-  defaultReleaseBranch: "main",
-  devDeps: ["cdklabs-projen-project-types"],
-  name: "cdk-codebuild-sonarcloud",
+  author: 'AWS',
+  authorAddress: 'aws-cdk-dev@amazon.com',
+  cdkVersion: '2.147.1',
+  defaultReleaseBranch: 'main',
+  devDeps: [
+    'aws-cdk-lib',
+    'cdklabs-projen-project-types',
+  ],
+  name: 'cdk-codebuild-sonarcloud',
   projenrcTs: true,
   release: false,
-  repositoryUrl: "https://github.com/cdklabs/cdk-codebuild-sonarcloud.git",
+  repositoryUrl: 'https://github.com/cdklabs/cdk-codebuild-sonarcloud.git',
 
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
