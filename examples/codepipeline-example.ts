@@ -1,13 +1,15 @@
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 
+//To use the example below, create a CDK app, copy the code in your app's lib directory and replace the parameters in <>.
+
 import * as cdk from 'aws-cdk-lib';
 import * as codepipeline from 'aws-cdk-lib/aws-codepipeline';
 import * as codepipeline_actions from 'aws-cdk-lib/aws-codepipeline-actions';
 import { Construct } from 'constructs';
-import { CDKCodeBuildSonarcloud } from '../src/index';
+import { CDKCodeBuildSonarcloud } from '<PATH TO THE CONSTRUCT>';
 
-export class TestSonarcloudConstructStack extends cdk.Stack {
+export class TestExamplesStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
@@ -39,7 +41,6 @@ export class TestSonarcloudConstructStack extends cdk.Stack {
 
     // Create CodePipeline with source and build stages
     new codepipeline.Pipeline(this, 'SonarCloudPipeline', {
-      pipelineName: 'SonarCloudPipeline',
       stages: [
         {
           stageName: 'Source',
@@ -54,6 +55,3 @@ export class TestSonarcloudConstructStack extends cdk.Stack {
     });
   }
 }
-
-const app = new cdk.App();
-new TestSonarcloudConstructStack(app, 'TestSonarcloudConstructStack', {});
