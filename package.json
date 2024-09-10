@@ -131,10 +131,10 @@
     "outdir": "dist",
     "targets": {
       "java": {
-        "package": "io.github.cdklabs.cdk.codebuild.sonarcloud",
+        "package": "io.github.cdklabs.codebuildsonarcloud",
         "maven": {
           "groupId": "io.github.cdklabs",
-          "artifactId": "cdk-codebuild-sonarcloud"
+          "artifactId": "cdk-tweet-codebuild-sonarcloud"
         }
       },
       "python": {
@@ -142,8 +142,8 @@
         "module": "cdk_codebuild_sonarcloud"
       },
       "dotnet": {
-        "namespace": "CdklabsCdkCodebuildSonarcloud",
-        "packageId": "CdklabsCdkCodebuildSonarcloud"
+        "namespace": "Cdklabs.CdkCodebuildSonarcloud",
+        "packageId": "Cdklabs.CdkCodebuildSonarcloud"
       },
       "go": {
         "moduleName": "github.com/cdklabs/cdk-codebuild-sonarcloud-go"
