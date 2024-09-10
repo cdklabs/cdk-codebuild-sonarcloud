@@ -1,13 +1,18 @@
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 
-//To use the example below, create a CDK app, copy the code in your app's lib directory and replace the parameters in <>.
+//To use the example below, create a CDK app, copy the code in your app's lib directory and set the 3 below variables.
+
+//variables
+const pathToConstruct = '';
+const sonarOrganizationName = '';
+const sonarProjectName = '';
 
 import * as cdk from 'aws-cdk-lib';
 import * as codepipeline from 'aws-cdk-lib/aws-codepipeline';
 import * as codepipeline_actions from 'aws-cdk-lib/aws-codepipeline-actions';
 import { Construct } from 'constructs';
-import { CDKCodeBuildSonarcloud } from '<PATH TO THE CONSTRUCT>';
+const CDKCodeBuildSonarcloud = require(pathToConstruct);
 
 export class TestExamplesStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
@@ -29,8 +34,8 @@ export class TestExamplesStack extends cdk.Stack {
 
     const sonarcloudScan = new CDKCodeBuildSonarcloud(this, 'SonarcloudBuildAction', {
       sourceOutput: sourceOutput,
-      sonarOrganizationName: '<SONAR Organization>',
-      sonarProjectName: '<SONAR Project Name>',
+      sonarOrganizationName: sonarOrganizationName,
+      sonarProjectName: sonarProjectName,
     });
 
     //declare S3 bucket with S3 native encryption
