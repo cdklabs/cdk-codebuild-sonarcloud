@@ -21,7 +21,7 @@ const project = new CdklabsConstructLibrary({
     mavenGroupId: 'io.github.cdklabs',
     mavenEndpoint: 'https://s01.oss.sonatype.org',
     javaPackage: 'io.github.cdklabs.codebuildsonarcloud',
-    mavenArtifactId: 'cdk-tweet-codebuild-sonarcloud',
+    mavenArtifactId: 'cdk-codebuild-sonarcloud',
   },
   publishToPypi: {
     distName: 'cdk-codebuild-sonarcloud',
