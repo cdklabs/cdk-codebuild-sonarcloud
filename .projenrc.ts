@@ -11,6 +11,7 @@ const project = new CdklabsConstructLibrary({
   ],
   name: 'cdk-codebuild-sonarcloud',
   projenrcTs: true,
+  private: false,
   repositoryUrl: 'https://github.com/cdklabs/cdk-codebuild-sonarcloud.git',
   releaseToNpm: true,
   publishToNuget: {
