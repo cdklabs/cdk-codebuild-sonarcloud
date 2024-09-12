@@ -28,6 +28,11 @@
       "type": "build"
     },
     {
+      "name": "commit-and-tag-version",
+      "version": "^12",
+      "type": "build"
+    },
+    {
       "name": "eslint-import-resolver-typescript",
       "type": "build"
     },
@@ -68,7 +73,7 @@
     },
     {
       "name": "jsii",
-      "version": "~5.2",
+      "version": "5.5.x",
       "type": "build"
     },
     {
