@@ -134,7 +134,7 @@
         "package": "io.github.cdklabs.codebuildsonarcloud",
         "maven": {
           "groupId": "io.github.cdklabs",
-          "artifactId": "cdk-tweet-codebuild-sonarcloud"
+          "artifactId": "cdk-codebuild-sonarcloud"
         }
       },
       "python": {
