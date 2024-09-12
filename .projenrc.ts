@@ -4,13 +4,13 @@ const project = new CdklabsConstructLibrary({
   authorAddress: 'aws-cdk-dev@amazon.com',
   cdkVersion: '2.147.1',
   defaultReleaseBranch: 'main',
+  jsiiVersion: '5.5.x',
   devDeps: [
     'aws-cdk-lib',
     'cdklabs-projen-project-types',
   ],
   name: 'cdk-codebuild-sonarcloud',
   projenrcTs: true,
-  release: false,
   repositoryUrl: 'https://github.com/cdklabs/cdk-codebuild-sonarcloud.git',
   releaseToNpm: true,
   publishToNuget: {
@@ -21,7 +21,7 @@ const project = new CdklabsConstructLibrary({
     mavenGroupId: 'io.github.cdklabs',
     mavenEndpoint: 'https://s01.oss.sonatype.org',
     javaPackage: 'io.github.cdklabs.codebuildsonarcloud',
-    mavenArtifactId: 'cdk-tweet-codebuild-sonarcloud',
+    mavenArtifactId: 'cdk-codebuild-sonarcloud',
   },
   publishToPypi: {
     distName: 'cdk-codebuild-sonarcloud',
