@@ -14,4 +14,4 @@ Check [Here](/examples/codepipeline-example.ts) for an example on how to use the
 # Security
 A Sonarcloud account is required to use this construct. Create a Sonarcloud [token](https://docs.sonarsource.com/sonarcloud/advanced-setup/user-accounts/#user-tokens) to connect securely to Sonarcloud from AWS CodeBuild. Store this token in your AWS account in AWS Secret Manager, name the secret "sonar-token" and use "SONAR_TOKEN" as the secret key.
 
-Please review the [AWS Secret Manager security best practices](https://docs.aws.amazon.com/prescriptive-guidance/latest/secure-sensitive-data-secrets-manager-terraform/best-practices.html) in order to securely create and manage your secret. 
+Please review the [AWS Secret Manager security best practices](https://docs.aws.amazon.com/prescriptive-guidance/latest/secure-sensitive-data-secrets-manager-terraform/best-practices.html) in order to securely create and manage your secret. <!-- Updated: Fri May 30 12:30:08 CEST 2025 -->
