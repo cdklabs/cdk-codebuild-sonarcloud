@@ -20,7 +20,7 @@ const project = new CdklabsConstructLibrary({
   },
   publishToMaven: {
     mavenGroupId: 'io.github.cdklabs',
-    mavenEndpoint: 'https://s01.oss.sonatype.org',
+    mavenServerId: 'central-ossrh',
     javaPackage: 'io.github.cdklabs.codebuildsonarcloud',
     mavenArtifactId: 'cdk-codebuild-sonarcloud',
   },
