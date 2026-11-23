@@ -4,6 +4,8 @@
 
 ### CDKCodeBuildSonarcloud <a name="CDKCodeBuildSonarcloud" id="cdk-codebuild-sonarcloud.CDKCodeBuildSonarcloud"></a>
 
+- *Implements:* constructs.IConstruct, constructs.IDependable
+
 #### Initializers <a name="Initializers" id="cdk-codebuild-sonarcloud.CDKCodeBuildSonarcloud.Initializer"></a>
 
 ```typescript
